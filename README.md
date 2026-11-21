@@ -39,34 +39,28 @@ The result reads as Melbourne, while remaining a plain matrix visual.
 Top suburbs: Melbourne 1,296 · Dandenong 610 · Epping 598 · Preston 578 ·
 Thomastown 514 · Berwick 460.
 
-## Published reports
+## Power BI file
 
-| Location | Workspace | Report ID |
-|---|---|---|
-| My workspace (requested) | `2c8690af-91fa-4905-a7ef-cb0f26e46712` | `634edd66-9cf4-410a-b65a-bea5c5ad945d` |
-| Fabric Learning Workspace (render-verified) | `6881ccf8-e614-4ab8-b02d-c4820eded362` | `82d14a19-a8b4-434f-98c3-6fed0e9ee6d5` |
+The complete Power BI project is in this repo and can be opened locally in Power BI Desktop:
 
-Open in Fabric:
+**[Melbourne Crash Card Map.pbip](ReportProject/Melbourne%20Crash%20Card%20Map.pbip)**
 
-- https://app.fabric.microsoft.com/groups/2c8690af-91fa-4905-a7ef-cb0f26e46712/reports/634edd66-9cf4-410a-b65a-bea5c5ad945d
-- https://app.fabric.microsoft.com/groups/6881ccf8-e614-4ab8-b02d-c4820eded362/reports/82d14a19-a8b4-434f-98c3-6fed0e9ee6d5
-
-The semantic model (`238e1dd5-e61d-43ab-84e0-3b4b6591b98b`) is in Fabric Learning
-Workspace because personal workspaces block the Power BI APIs needed to host and
-refresh models. Both reports bind to the same model.
+It contains both the report (`*.Report`) and the semantic model (`*.SemanticModel`).
+The model embeds its data as inline M, so it opens without a gateway, credential, or
+refresh source.
 
 ## Files
 
 | File | Purpose |
 |---|---|
-| `report_live_render.png` | Screenshot of the published Fabric report |
+| `report_live_render.png` | Screenshot of the live Power BI matrix render |
 | `cardmap_final.png` | Styled design render of the same data |
 | `cardmap_v2.csv` | Exact 485-row grid embedded in the semantic model |
 | `cardmap_grid.csv` | Earlier full grid with labels and colours |
 | `build_cardmap.py` | Downloads/processes the data and spatially joins suburbs |
 | `layout.py` | Tile cartogram layout and bay detection |
 | `preview.py` | Renders the design preview |
-| `ReportProject/` | PBIP/PBIR source for the published report |
+| `ReportProject/` | Full PBIP project: report + semantic model |
 | `linkedin-post.md` | Draft LinkedIn post |
 
 ## Rebuilding

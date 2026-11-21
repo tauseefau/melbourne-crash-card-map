@@ -19,12 +19,13 @@ control of a table: exact numbers, consistent card sizes, accessible labels, and
 geography licensing. It's a good reminder that a "map" in BI is often just a layout
 problem, not a mapping problem.
 
-Built and published in Microsoft Fabric with Power BI, with the whole thing assembled
-in OpenCode using the Fabric skills.
+Built with Power BI and Microsoft Fabric, with the whole thing assembled in OpenCode
+using the Fabric skills.
 
-Live report: https://app.fabric.microsoft.com/groups/6881ccf8-e614-4ab8-b02d-c4820eded362/reports/82d14a19-a8b4-434f-98c3-6fed0e9ee6d5
+Power BI file (open it in Power BI Desktop):
+https://github.com/tauseefau/melbourne-crash-card-map/blob/main/ReportProject/Melbourne%20Crash%20Card%20Map.pbip
 
-Source, data and the full project: https://github.com/tauseefau/melbourne-crash-card-map
+Source, data, images and the full project: https://github.com/tauseefau/melbourne-crash-card-map
 
 What's the most interesting non-map "map" you've seen in Power BI?
 
